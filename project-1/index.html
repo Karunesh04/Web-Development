@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Assignment-1</title>
+    <!-- STYLING -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Montserrat, poppins, sans-serif;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("images/bg.png");
+
+        opacity: calc();
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      header {
+        height: 5%;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* margin-top: 30px; */
+        padding-top: 10px;
+      }
+      .logo img {
+        height: 40px;
+      }
+      ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #ffc133;
+      }
+      button {
+        background-color: #ff515f;
+        border: none;
+        height: 40px;
+        width: 90px;
+        color: #fff;
+        font-family: Montserrat;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      /* SECTION */
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 80px;
+        font-weight: 900;
+        color: #ffc133;
+      }
+      section button {
+        margin-top: 40px;
+        width: 30%;
+        height: 50px;
+        font-size: 18px;
+      }
+      footer {
+        display: flex;
+        width: 90vw;
+        justify-content: flex-end;
+      }
+      footer img {
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+
+      <ul>
+        <li><a href="#">Our Menu</a></li>
+        <li><a href="#">Maps</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="button">
+        <button
+          type="bu
+        "
+        >
+          Order
+        </button>
+      </div>
+    </header>
+    <section>
+      <h1>A Restaurant That</h1>
+      <h1>Only Serves</h1>
+      <h1>Delecious Food</h1>
+      <button class="menu">Read Our Menu</button>
+    </section>
+    <footer><img src="images/scroll.png" alt="" /></footer>
+  </body>
+</html>

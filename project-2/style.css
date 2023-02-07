@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  padding: 2%;
+  overflow: hidden;
+  /* height: 100vh; */
+}
+/* NAV-BAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+  filter: brightness(0);
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: centre;
+  padding: 0 20px;
+}
+ul a {
+  margin: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+button {
+  background-color: #5955b3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+}
+
+/* SECTION */
+section {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+.objective {
+  padding-left: 30px;
+}
+h1 {
+  margin-top: 120px;
+  line-height: 1.2;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #3c2e60;
+}
+span {
+  color: #5955b3;
+}
+p {
+  margin-top: 5%;
+  color: #828282;
+  font-size: 16px;
+}
+.services {
+  margin-top: 8%;
+  width: 150px;
+}
+.hell {
+  margin-top: 25px;
+  height: 500px;
+  width: 600px;
+}
