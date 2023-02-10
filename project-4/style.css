@@ -29,6 +29,8 @@ p {
     display: none;
   }
 }
+
+/* Media querry for frame 2 */
 @media screen and (max-width: 1024px) {
   body {
     background-color: #deb887;
@@ -46,6 +48,8 @@ p {
     display: none;
   }
 }
+
+/* Media querry for frame 3 */
 @media screen and (max-width: 768px) {
   body {
     background-color: #00ffff;
@@ -63,6 +67,8 @@ p {
     display: none;
   }
 }
+
+/* Media querry for frame 4 */
 @media screen and (max-width: 425px) {
   body {
     background-color: #dc143c;
