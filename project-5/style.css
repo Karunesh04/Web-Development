@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #111827;
+}
+img {
+  cursor: pointer;
+}
+/* Nav-Bar */
+.nav-bar {
+  margin: 20px;
+  display: flex;
+  justify-content: right;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+ul a {
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 18px;
+  padding: 4px 8px;
+}
+ul a:hover {
+  background-color: #5dadec;
+  border-radius: 8px;
+  color: #111827;
+  transition: 0.5ms ease-in-out;
+}
+.hamburger {
+  display: none;
+}
+/* Intro */
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left h1 {
+  font-size: 60px;
+}
+.left h2 {
+  color: #f4ce2c;
+  margin-top: 10px;
+}
+.wave {
+  display: flex;
+  align-items: centre;
+  gap: 10px;
+  /* margin-bottom: 30px; */
+}
+.wave img {
+  height: 40px;
+  width: 40px;
+}
+.wave h3 {
+  font-size: 20px;
+  padding-top: 8px;
+}
+.right img {
+  height: 500px;
+  width: 500px;
+}
+/* Projects */
+#project,
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.project-heading,
+.contact-heading {
+  margin: 40px 0 25px;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: #4d3bff 5px solid;
+  border-radius: 10px;
+}
+.project-list {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 30px 20px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-card img {
+  height: 250px;
+  width: 225px;
+}
+/* Contact */
+.contact-list {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+}
+.contact-list img {
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 788px) {
+  * {
+    text-align: center;
+  }
+  .list {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  img[alt="menu"] {
+    height: 20px;
+    width: 20px;
+  }
+  #intro {
+    flex-direction: column;
+  }
+  .wave {
+    display: block;
+  }
+  .right img {
+    height: 40vh;
+    width: auto;
+  }
+  .project-list {
+    grid-template-columns: auto;
+  }
+}
