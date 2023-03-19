@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #f0f4f5;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+button {
+    background-color: #20BC7E;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+
+/* Navigation */
+nav {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 400px;
+    padding-top: 10px;
+}
+
+img[alt="logo"] {
+    scale: 0.9;
+}
+
+ul {
+    display: flex;
+    gap: 65px;
+    margin-left: 30px;
+}
+
+/* Main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.left {
+    padding-left: 45px;
+}
+
+.left h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.left p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #7c7c7c;
+    margin: 20px 0;
+}
+
+.left img {
+    scale: 0.8;
+}
+
+img[alt="bottom-angle"] {
+    position: absolute;
+    right: 580px;
+}
+
+img[alt="mouse"] {
+    position: absolute;
+    right: 550px;
+    bottom: 80px
+}
+
+img[alt="stethoscope"] {
+    position: absolute;
+    top: 60px;
+    left: 270px;
+    height: 610px;
+}
+
+.right {
+    width: 365px;
+    padding-left: 100px;
+}
+
+
+img[alt="green-box"] {
+    height: 345px;
+    width: 365px;
+    padding-top: 150px;
+    padding-left: 90px;
+}
+
+img[alt="yellow-box"] {
+    position: absolute;
+    right: 0;
+    top: 280px;
+    height: 300px;
+    width: 300px;
+}
+
+img[alt="doctor"] {
+    position: absolute;
+    right: 0;
+    top: 83px;
+    height: 525px;
+    width: 400px;
+}
+
+/* About */
+
+#about,
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 87.6vh;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.information h1 {
+    color: #20BC7E;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.information p {
+    margin: 15px 0 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pride {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pride-card {
+    width: 90px;
+    height: 50px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.pride-card p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+span {
+    font-size: 17px;
+    font-weight: 800;
+    color: #20BC7E
+}
+
+/* Contact */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+    height: 340px;
+    width: 250px;
+    padding: 15px;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+textarea {
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #20BC7E;
+    margin: 20px 0 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
