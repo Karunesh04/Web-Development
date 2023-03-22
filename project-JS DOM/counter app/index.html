@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <!-- CSS -->
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 97vh;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            padding: 35px 0;
+            border-radius: 10px;
+            box-shadow: #000000 0 3px 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 0 0 20px;
+        }
+
+        div {
+            margin: 10px 10px 20px;
+        }
+
+        input {
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+
+        textarea {
+            resize: none;
+            margin: 5px 5px 0;
+            padding: 5px;
+            outline: none;
+            font-size: 22px;
+            text-align: center;
+            border: none;
+            border-bottom: #000000 solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Counter App</h2>
+        <div><input type="button" id="decrement" value="Decrement -1">
+            <textarea name="result" id="result" cols="2" rows="1" readonly>0</textarea>
+            <input type="button" id="increment" value="Increment +1">
+        </div>
+        <input type="button" id="reset" value="Reset">
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const result = document.getElementById("result");
+        const increment = document.getElementById("increment");
+        const decrement = document.getElementById("decrement");
+        const reset = document.getElementById("reset");
+
+        let num;
+
+        // for increment
+        increment.addEventListener("click", () => {
+            num = Number(result.innerHTML);
+            num += 1;
+            if (num < 11) {
+                result.innerHTML = num;
+            }
+            else {
+                alert("O..oh! Count greater than 10.");
+            }
+        });
+
+        // for decrement
+        decrement.addEventListener("click", () => {
+            num = Number(result.innerHTML);
+            num -= 1;
+            if (num > -1) {
+                result.innerHTML = num;
+            }
+            else {
+                alert("O..oh! Count less than 0.");
+            }
+        });
+
+        // for reset
+        reset.addEventListener("click", () => {
+            result.innerText = 0;
+        });
+    </script>
+</body>
+
+</html>
