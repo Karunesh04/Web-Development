@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 87vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            gap: 10px;
+            height: 250px;
+            width: 250px;
+            border: #000000 solid;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: 600;
+        }
+
+        input {
+            padding: 8px;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email" placeholder="Enter your mail">
+        <br>
+        <label for="email">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <br>
+        <input type="button" onclick="validator()" value=" Submit">
+    </form>
+    <p id="message"></p>
+</body>
+<script>
+    const mail = document.getElementById(`email`);
+    const password = document.getElementById(`password`);
+    const message = document.getElementById(`message`);
+
+    function validator() {
+        let value1 = mail.value;
+        let value2 = password.value;
+
+        if ((value1.includes(`@`)) && value2.length >= 8) {
+            message.innerText = `Valid email and password!`;
+            message.style.color = `green`;
+        } else if (value1 != `` || value2 != ``) {
+            message.innerText = `Invalid email or password!`;
+            message.style.color = `red`;
+        } else {
+            message.innerText = `You should fill complete details first!`;
+        }
+    }
+</script>
+
+</html>

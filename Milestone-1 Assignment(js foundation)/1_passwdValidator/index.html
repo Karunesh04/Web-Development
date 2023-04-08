@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordValidation</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 87vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 200px;
+            width: 250px;
+            border: #000000 solid;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>User Validator</h2>
+        <input type="text" id="name" placeholder="Enter your username" required>
+        <br>
+        <input type="password" id="passwd" placeholder="Enter your password" required>
+        <br>
+        <input type="button" id="submit" value="Submit">
+    </form>
+</body>
+<script>
+    const confirmedUser = "Udai",
+        confirmedPasswsd = "@345#";
+    const username = document.getElementById("name"),
+        password = document.getElementById("passwd");
+
+    document.getElementById("submit").addEventListener("click", () => {
+        let firstVal = username.value, secondVal = password.value;
+
+        if (firstVal != 0 && secondVal != 0) {
+            if (firstVal == confirmedUser && secondVal == confirmedPasswsd)
+                alert("Matched. Validation Successful.");
+            else
+                alert("Didn't match. Validation unsuccessful");
+        }
+        else {
+            alert("You must fill both fields.!!");
+        }
+
+    })
+
+</script>
+
+</html>

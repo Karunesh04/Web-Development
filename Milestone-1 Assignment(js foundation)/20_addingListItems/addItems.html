@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding List Items</title>
+</head>
+
+<body>
+    <h2>What you'll learn</h2>
+    <ul id="list" style="list-style-type:square ;"></ul>
+    <button type="submit" id="button">Add Items</button>
+</body>
+<script>
+    const items = ['HTML and Semantics', 'Starting with CSS', 'Working Template', 'Mobile responsive webpages', 'Grid and Flex-box in CSS', 'Projects using HTML & CSS', 'Version Control and Git', 'Getting Started with JavaScript', 'Advance JavaScript', 'Working with DOM', 'Making Projects using HTML, CSS and JavaScript'];
+
+    const list = document.getElementById('list');
+    const button = document.getElementById('button');
+
+    let index = 0;
+    button.addEventListener('click', () => {
+        if (index < items.length) {
+            let li = document.createElement('li');
+            list.appendChild(li);
+            li.innerText = items[index];
+            index++;
+        } else
+            alert('! All items have been added !')
+
+    })
+
+
+</script>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 87vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 200px;
+            width: 250px;
+            border: #000000 solid;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>User Login</h2>
+        <input type="text" id="name" placeholder="Enter your username">
+        <br>
+        <input type="password" id="passwd" placeholder="Enter your password">
+        <br>
+        <input type="button" id="submit" value="Submit">
+        <br>
+    </form>
+</body>
+<script>
+    const userName = document.getElementById("name");
+    let name = userName.value;
+    userName.addEventListener(`change`, () => {
+        let name = (userName.value).toString();
+        console.log(name);
+        name[0] === name[0].toLowerCase() ? userName.value = name[0].toUpperCase() + name.slice(1) : userName.value = name;
+    });
+
+</script>
+
+</html>

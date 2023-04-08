@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image_Position</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+        }
+
+        #area {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        <img id="img" src="image.jpg" alt="Not found">
+    </div>
+
+
+</body>
+<script>
+    const img = document.getElementById('img');
+
+    let left = 0;
+    let up = 0;
+
+    function move(e) {
+        switch (e.keyCode) {
+            case 37:
+                left -= 100;
+                break;
+            case 38:
+                up -= 100;
+                break;
+            case 39:
+                left += 100;
+                break;
+            case 40:
+                up += 100;
+                break;
+        }
+
+        img.style.left = left + 'px';
+        img.style.top = up + 'px';
+
+    }
+    document.addEventListener('keydown', move);
+
+</script>
+
+</html>
