@@ -15,24 +15,16 @@
         }
 
         img {
-            height: 150px;
-            width: 150px;
+            height: 200px;
+            width: 200px;
             position: absolute;
-        }
-
-        #area {
-            height: 100vh;
-            width: 100%;
-            overflow: hidden;
         }
     </style>
 </head>
 
 <body>
-    <div id="area">
-        <img id="img" src="image.jpg" alt="Not found">
-    </div>
 
+    <img id="img" src="image.jpg" alt="Not found">
 
 </body>
 <script>
@@ -41,19 +33,24 @@
     let left = 0;
     let up = 0;
 
+
     function move(e) {
         switch (e.keyCode) {
+            // arrowLeft
             case 37:
-                left -= 100;
+                left = Math.max(0, left - 100);
                 break;
+            // arrowUp
             case 38:
-                up -= 100;
+                up = Math.max(0, up - 100);
                 break;
+            // arrowRight
             case 39:
-                left += 100;
+                left = Math.min(window.innerWidth - img.clientWidth, left + 100);
                 break;
+            // arrowDown
             case 40:
-                up += 100;
+                up = Math.min(window.innerHeight - img.clientHeight, up + 100);
                 break;
         }
 
