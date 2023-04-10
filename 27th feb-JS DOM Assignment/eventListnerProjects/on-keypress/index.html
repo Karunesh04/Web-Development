@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeypressEvent</title>
+    <link rel="stylesheet" href="..\css-for-all\style.css">
+</head>
+
+<body>
+    <div id="click-it">
+        <p>Press any Key⌨️</p>
+        <input type="text" name="key" id="key">
+    </div>
+    <script>
+        document.getElementById("key").addEventListener("keypress", () => {
+            alert("You pressed a key on your keyboard.");
+        });
+    </script>
+</body>
+
+</html>
